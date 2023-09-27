@@ -3,7 +3,7 @@ const removeFromArray = function() {
     startArray = arguments[0] ;
 
     for (i = 1 ; i < arguments.length ; i++) {
-        if (startArray.indexOf(arguments[i]) > -1) {
+        if (startArray.includes(arguments[i])) {
             startArray.splice(startArray.indexOf(arguments[i]), 1) ;
         }
     }
